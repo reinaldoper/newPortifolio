@@ -1,38 +1,170 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f5f0f0;
+}
+
+.elementos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
   text-align: center;
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(243, 239, 239);
+  font-weight: 500;
+  height: 220px;
+  font-size: 20px;
+  font-family: 'Verdana';
+  background-color: #666666;
+  box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link {
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img-src {
+  width: 100px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#projetos {
+  display: flex;
+  margin-left: 40%;
+}
+.map-img {
+  width: 60%;
+  height: 400px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0.8);
+}
+.image-projetos {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-left: 30%;
+}
+.sobre {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  margin-top: 50px;
+  text-align: justify;
+  width: 60%;
+  font-style:oblique;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.img {
+  width: 50%;
+  height: 60vb;
+  margin-left: 20%;
+  border-radius: 8px;
+  opacity : 1.5;
+}
+/* .copyright {
+  text-align: center;
+  margin-top: 10%;
+  color: rgb(54, 58, 58);
+  font-size: 24px;
+} */
+.container-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #726c6c;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #212423;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 1px;
+  height: 1000px;
+  background-color: #f5f0f0;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
   }
-  to {
-    transform: rotate(360deg);
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
   }
 }
+.img-carrosel {
+  width: 380px;
+  height: 160px;
+}
+.images {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80%;
+  margin-top: 40px;
+}
+footer {
+  height: 50px;
+  margin-top: -50px;
+}
+.button {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  margin-top: 250px;
+}
+.button img {
+  display: flex;
+  width: 150px;
+  height: 60px;
+  margin:auto;
+}
+h4 {
+  display: flex;
+  margin-left: 44%;
+}
+
+
+
+
+
