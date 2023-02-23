@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: #f5f0f0;
 }
@@ -23,28 +24,48 @@ body {
   box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.2);
   width: 100%;
 }
+
+.title {
+  margin-top: 10px;
+}
+
 .link {
   text-decoration: none;
 }
+
 .img-src {
   width: 100px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
+
 #projetos {
   display: flex;
-  margin-left: 40%;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  background-color: #726c6c;
+  color: #f5f0f0;
 }
+
 .map-img {
   width: 60%;
   height: 400px;
   border-radius: 8px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0.8);
 }
+.map-img:hover {
+  box-shadow: 2px 2px 2px 1px rgb(236, 4, 35);
+  transition: 0.2s;
+  opacity: 0.7;
+}
+
 .image-projetos {
   display: flex;
   flex-direction: column;
   margin-left: 30%;
+  overflow: hidden;
 }
+
 .sobre {
   display: flex;
   flex-direction: column;
@@ -52,7 +73,7 @@ body {
   margin-top: 50px;
   text-align: justify;
   width: 60%;
-  font-style:oblique;
+  font-style: oblique;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -61,8 +82,9 @@ body {
   height: 60vb;
   margin-left: 20%;
   border-radius: 8px;
-  opacity : 1.5;
+  opacity: 1.5;
 }
+
 /* .copyright {
   text-align: center;
   margin-top: 10%;
@@ -73,10 +95,12 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
 .navbar {
   display: flex;
   flex-direction: row;
 }
+
 .sidebar {
   margin: 0;
   padding: 0;
@@ -122,8 +146,14 @@ div.content {
     height: auto;
     position: relative;
   }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
+
+  .sidebar a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -133,38 +163,39 @@ div.content {
     float: none;
   }
 }
+
 .img-carrosel {
   width: 380px;
   height: 160px;
 }
+
 .images {
   display: flex;
   flex-direction: column;
   margin-left: 80%;
   margin-top: 40px;
 }
+
 footer {
   height: 50px;
   margin-top: -50px;
 }
+
 .button {
   display: flex;
   width: 100%;
   text-align: center;
   margin-top: 250px;
 }
+
 .button img {
   display: flex;
   width: 150px;
   height: 60px;
-  margin:auto;
+  margin: auto;
 }
+
 h4 {
   display: flex;
   margin-left: 44%;
 }
-
-
-
-
-
