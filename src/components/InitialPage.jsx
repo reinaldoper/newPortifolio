@@ -14,6 +14,7 @@ import topo from '../images/topo.png';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 import SIdebar from './SIdebar';
+import tecnologias from '../Data/tecnologias';
 
 
 export default class InitialPage extends Component {
@@ -24,6 +25,12 @@ export default class InitialPage extends Component {
     });
   };
   render() {
+    const tec = tecnologias.map((component) => (
+      <div key={component.id} className='div-tec'>
+        <h6>{component.titulo}</h6>
+        <img src={component.src} alt={component.descricao}/>
+      </div>
+    ))
     return (
       <div>
         <header>
@@ -87,20 +94,22 @@ export default class InitialPage extends Component {
               <h4>Desenvolvedor fullStack!</h4>
               <div className='images'>
                 <a href="https://stackoverflow.com/users/21267050/reinaldo-pereira-dos-santos"
-                  ><img src={stackOverflow} alt="StackOverFlow" className='img-src'/></a>
+                ><img src={stackOverflow} alt="StackOverFlow" className='img-src' /></a>
                 <a href="https://www.linkedin.com/in/reinaldo-pereira/"
-                  ><img src={linkedin} alt='linkedin' className='img-src'/></a>
+                ><img src={linkedin} alt='linkedin' className='img-src' /></a>
                 <a href="https://github.com/reinaldoper"
-                  ><img src={github} alt='git' className='img-src'/></a>
+                ><img src={github} alt='git' className='img-src' /></a>
                 <a href="mailto:reinaldoper83@gmail.com?subject=Hello%20again">
-                  <img src={gmail} alt='gmail' className='img-src'/></ a>
-                  
+                  <img src={gmail} alt='gmail' className='img-src' /></ a>
               </div>
             </div>
             <img src={eu} alt="Images" className='img' />
           </div>
+          <ol className='tecnologias'>
+              {tec}
+          </ol>
           <button type='button'
-           className='button' onClick={this.scrollToTop}><img src={topo} alt='topo'/></button>
+            className='button' onClick={this.scrollToTop}><img src={topo} alt='topo' /></button>
           <h4>Copyright &copy; 2023</h4>
         </div>
       </div>

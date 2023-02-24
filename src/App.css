@@ -25,6 +25,17 @@ body {
   width: 100%;
 }
 
+.tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.div-tec {
+  margin-left: 20px;
+}
+
 .title {
   margin-top: 10px;
 }
