@@ -89,7 +89,7 @@ const data = [
     id: 13,
     title: 'Sistema solar',
     image: solar,
-    link: 'https://github.com/reinaldoper?page=1&tab=repositories'
+    link: 'https://github.com/reinaldoper/solar-system'
   }
 ]
 
