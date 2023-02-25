@@ -49,6 +49,7 @@ body {
 
 .img-src {
   width: 100px;
+  /* filter: blur(0px); */
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
 
@@ -68,6 +69,7 @@ body {
   margin-left: 50px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0.8);
 }
+
 .map-img:hover {
   box-shadow: 2px 2px 2px 1px rgb(236, 4, 35);
   transition: 0.2s;
@@ -98,6 +100,8 @@ body {
   margin-left: 20%;
   border-radius: 8px;
   margin-top: 10px;
+  filter: brightness(120%);
+  filter: contrast(110%);
   margin-bottom: 10px;
 }
 

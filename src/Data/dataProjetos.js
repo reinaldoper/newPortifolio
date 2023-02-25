@@ -11,6 +11,8 @@ import digimon from '../images/digimom.png';
 import covid from '../images/covid.png';
 import rick from '../images/rick-morthy.png';
 import solar from '../images/solar.png';
+import cores from '../images/cores.png';
+import cart from '../images/cart.png';
 
 const data = [
   {
@@ -90,6 +92,18 @@ const data = [
     title: 'Sistema solar',
     image: solar,
     link: 'https://github.com/reinaldoper/solar-system'
+  },
+  {
+    id: 14,
+    title: 'Pixel Art',
+    image: cores,
+    link: 'https://github.com/reinaldoper/pixels-art'
+  },
+  {
+    id: 15,
+    title: 'Shopping Cart',
+    image: cart,
+    link: 'https://github.com/reinaldoper/shopping-cart'
   }
 ]
 
