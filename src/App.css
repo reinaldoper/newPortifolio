@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #f5f0f0;
+  background-color: #D3D3D3;
 }
 
 .elementos {
@@ -37,7 +37,10 @@ body {
 }
 
 .title {
+  display: flex;
   margin-top: 10px;
+  font-size: 15px;
+  margin-left: 50px;
 }
 
 .link {
@@ -59,9 +62,10 @@ body {
 }
 
 .map-img {
-  width: 60%;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border-radius: 8px;
+  margin-left: 50px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0.8);
 }
 .map-img:hover {
@@ -72,9 +76,9 @@ body {
 
 .image-projetos {
   display: flex;
-  flex-direction: column;
-  margin-left: 30%;
+  flex-wrap: wrap;
   overflow: hidden;
+  margin-left: 10%;
 }
 
 .sobre {
@@ -93,7 +97,8 @@ body {
   height: 60vb;
   margin-left: 20%;
   border-radius: 8px;
-  opacity: 1.5;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* .copyright {
@@ -147,7 +152,7 @@ div.content {
   margin-left: 200px;
   padding: 1px 1px;
   height: 1000px;
-  background-color: #f5f0f0;
+  background-color: #D3D3D3;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */

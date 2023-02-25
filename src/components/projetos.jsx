@@ -7,7 +7,7 @@ export default class projetos extends Component {
     const result = data.map((data) => (
       <div key={data.id}>
         <h2 className='title'>{data.title}</h2>
-        <a href={data.link}><img src={data.image} alt={data.title} className='map-img'/></a>
+        <a href={data.link}><img src={data.image} alt={data.title} className='map-img' /></a>
       </div>
     ));
     return (
@@ -17,6 +17,7 @@ export default class projetos extends Component {
         <ol className='image-projetos'>
           {result}
         </ol>
+        <h4>Copyright &copy; 2023</h4>
       </div>
     )
   }

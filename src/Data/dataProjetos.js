@@ -7,6 +7,10 @@ import skambooks from '../images/skambooks.png';
 import skambooks1 from '../images/skambooks1.png';
 import receitas from '../images/receitas.png';
 import tela from '../images/tela-classificacao.png';
+import digimon from '../images/digimom.png';
+import covid from '../images/covid.png';
+import rick from '../images/rick-morthy.png';
+import solar from '../images/solar.png';
 
 const data = [
   {
@@ -17,51 +21,75 @@ const data = [
   },  
   {
     id: 2,
-    title: 'Musicas- Trybe Tunes',
+    title: 'Trybe Tunes',
     image: musicas,
     link: 'https://github.com/reinaldoper?tab=repositories'
   },
   {
     id: 3,
-    title: 'Times- Ligas mundiais',
+    title: 'Ligas mundiais',
     image: times,
     link: 'https://github.com/reinaldoper/ligasDeTimes'
   },
   {
     id: 4,
-    title: 'Login- Projeto Trybe futebol',
+    title: 'Trybe futebol',
     image: login,
     link: 'https://github.com/reinaldoper/trybe-futebol-clube'
   },
   {
     id: 5,
-    title: 'Partidas- Projeto Trybe futebol',
+    title: 'Trybe futebol',
     image: partidas,
     link: 'https://github.com/reinaldoper/trybe-futebol-clube'
   },
   {
     id: 6,
-    title: 'Skambooks- Projeto de pesquisas por livros',
+    title: 'Skambooks',
     image: skambooks,
     link: 'https://github.com/stonefullstm/project-skambooks'
   },
   {
     id: 7,
-    title: 'Skambooks- Projeto de pesquisas por livros',
+    title: 'Skambooks',
     image: skambooks1,
     link: 'https://github.com/stonefullstm/project-skambooks'
   },
   {
     id: 8,
-    title: 'Receitas- Projeto Receitas',
+    title: 'Projeto Receitas',
     image: receitas,
     link: 'https://github.com/reinaldoper?tab=repositories'
   },
   {
     id: 9,
-    title: 'Tela- Classificacao',
+    title: 'Classificacao',
     image: tela,
     link: 'https://github.com/reinaldoper/trybe-futebol-clube'
+  },
+  {
+    id: 10,
+    title: 'Digimon',
+    image: digimon,
+    link: 'https://github.com/reinaldoper/digimonsApi'
+  },
+  {
+    id: 11,
+    title: 'Covid-19',
+    image: covid,
+    link: 'https://github.com/reinaldoper/dadosCovid'
+  },
+  {
+    id: 12,
+    title: 'Rick-Morthy',
+    image: rick,
+    link: 'https://github.com/reinaldoper/theRickMortyApi'
+  },
+  {
+    id: 13,
+    title: 'Sistema solar',
+    image: solar,
+    link: 'https://github.com/reinaldoper?page=1&tab=repositories'
   }
 ]
 
