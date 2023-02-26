@@ -34,7 +34,7 @@ export default class InitialPage extends Component {
     ));
     const link = links.map((link) => (
       <div key={link.id}>
-        <h6>{link.titulo}</h6>
+        <h6>{link.alt}</h6>
         <a href={link.href}><img src={link.image} alt={link.alt} className='img-src' /></a>
       </div>
     ));
