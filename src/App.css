@@ -83,6 +83,12 @@ body {
   margin-left: 10%;
 }
 
+@media (max-width: 450px) {
+  .image-projetos{
+    margin-left: 0px;
+  }
+}
+
 .sobre {
   display: flex;
   flex-direction: column;

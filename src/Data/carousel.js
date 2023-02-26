@@ -3,6 +3,12 @@ import musicas from '../images/musicas.png';
 import times from '../images/times.png';
 import partidas from '../images/partidas.png';
 import classificacao from '../images/tela-classificacao.png';
+import covid from '../images/covid.png';
+import rick from '../images/rick-morthy.png';
+import solar from '../images/solar.png';
+import cores from '../images/cores.png';
+import cart from '../images/cart.png';
+
 
 const carousel = [
   {
@@ -29,6 +35,31 @@ const carousel = [
     id: 5,
     alt: 'Classificação',
     src: classificacao
+  },
+  {
+    id: 6,
+    alt: 'Covid',
+    src: covid
+  },
+  {
+    id: 7,
+    alt: 'Rick',
+    src: rick
+  },
+  {
+    id: 8,
+    alt: 'Solar',
+    src: solar
+  },
+  {
+    id: 9,
+    alt: 'Cores',
+    src: cores
+  },
+  {
+    id: 10,
+    alt: 'Cart',
+    src: cart
   }
 ]
 
