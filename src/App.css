@@ -83,12 +83,6 @@ body {
   margin-left: 10%;
 }
 
-@media (max-width: 450px) {
-  .image-projetos{
-    margin-left: 0px;
-  }
-}
-
 .sobre {
   display: flex;
   flex-direction: column;
@@ -109,6 +103,12 @@ body {
   filter: brightness(120%);
   filter: contrast(110%);
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 450px) {
+  .image-projetos{
+    margin-left: 0px;
+  }
 }
 
 /* .copyright {
@@ -156,6 +156,9 @@ body {
   background-color: #555;
   color: white;
 }
+.caption {
+  color: #ee0410;
+}
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
@@ -187,6 +190,16 @@ div.content {
   .sidebar a {
     text-align: center;
     float: none;
+  }
+  .img {
+    width: 50%;
+    height: 80px;
+    margin-left: 30%;
+    border-radius: 8px;
+    margin-top: 10px;
+    filter: brightness(120%);
+    filter: contrast(110%);
+    margin-bottom: 10px;
   }
 }
 

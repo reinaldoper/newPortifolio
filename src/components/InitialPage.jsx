@@ -18,12 +18,16 @@ export default class InitialPage extends Component {
   };
   render() {
     const carou = carousel.map((i) => (
-      <Carousel.Item interval={1500} key={i.id}>
+      <Carousel.Item interval={800} key={i.id}>
         <img
           className='img-carrosel'
           src={i.src}
           alt={i.alt}
         />
+        <Carousel.Caption className='caption'>
+          <h3>{i.title}</h3>
+          <p>{i.descreption}</p>
+        </Carousel.Caption>
       </Carousel.Item>
     ))
     const tec = tecnologias.map((component) => (

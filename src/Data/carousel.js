@@ -14,52 +14,72 @@ const carousel = [
   {
     id: 1,
     alt: 'Mercado',
-    src: mercado
+    src: mercado,
+    title: 'Mercado',
+    descreption: 'Api mercado Livre'
   },
   {
     id: 2,
     alt: 'Musicas',
-    src: musicas
+    src: musicas,
+    title: 'Musicas',
+    descreption: 'Buscar musicas'
   },
   {
     id: 3,
     alt: 'Times',
-    src: times
+    src: times,
+    title: 'Times',
+    descreption: 'Buscar times'
   },
   {
     id: 4,
     alt: 'Partidas',
-    src: partidas
+    src: partidas,
+    title: 'Partidas',
+    descreption: 'Buscar partidas'
   },
   {
     id: 5,
     alt: 'Classificação',
-    src: classificacao
+    src: classificacao,
+    title: 'Classificação',
+    descreption: 'Tela Classificação'
   },
   {
     id: 6,
     alt: 'Covid',
-    src: covid
+    src: covid,
+    title: 'Covid',
+    descreption: 'Dados Covid'
   },
   {
     id: 7,
     alt: 'Rick',
-    src: rick
+    src: rick,
+    title: 'Rick',
+    descreption: 'Dados Rick'
   },
   {
     id: 8,
     alt: 'Solar',
-    src: solar
+    src: solar,
+    title: 'Solar',
+    descreption: 'Sistema Solar'
   },
   {
     id: 9,
     alt: 'Cores',
-    src: cores
+    src: cores,
+    title: 'Cores',
+    descreption: 'Pixel Art'
   },
   {
     id: 10,
     alt: 'Cart',
-    src: cart
+    src: cart,
+    title: 'Cart',
+    descreption: 'Cart shopping'
   }
 ]
 
