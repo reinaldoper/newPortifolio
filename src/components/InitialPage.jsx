@@ -1,20 +1,12 @@
 import React, { Component } from 'react';
 import eu from '../images/eu.png';
-import mercado from '../images/mercado.png';
-import musicas from '../images/musicas.png';
-import times from '../images/times.png';
-import login from '../images/tela-login.png';
-import partidas from '../images/partidas.png';
-import classificacao from '../images/tela-classificacao.png';
-import stackOverflow from '../images/stackOver.png';
-import github from '../images/github.png';
-import linkedin from '../images/linkedin.png';
-import gmail from '../images/gmail.png';
 import topo from '../images/topo.png';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 import SIdebar from './SIdebar';
 import tecnologias from '../Data/tecnologias';
+import links from '../Data/dataLinks';
+import carousel from '../Data/carousel';
 
 
 export default class InitialPage extends Component {
@@ -25,12 +17,27 @@ export default class InitialPage extends Component {
     });
   };
   render() {
+    const carou = carousel.map((i) => (
+      <Carousel.Item interval={1500} key={i.id}>
+        <img
+          className='img-carrosel'
+          src={i.src}
+          alt={i.alt}
+        />
+      </Carousel.Item>
+    ))
     const tec = tecnologias.map((component) => (
       <div key={component.id} className='div-tec'>
         <h6>{component.titulo}</h6>
-        <img src={component.src} alt={component.descricao}/>
+        <img src={component.src} alt={component.descricao} />
       </div>
-    ))
+    ));
+    const link = links.map((link) => (
+      <div key={link.id}>
+        <h6>{link.titulo}</h6>
+        <a href={link.href}><img src={link.image} alt={link.alt} className='img-src' /></a>
+      </div>
+    ));
     return (
       <div>
         <header>
@@ -39,48 +46,7 @@ export default class InitialPage extends Component {
               <h2>PÁGINA OFICIAL</h2>
               {/* inicio da renderização do carousel */}
               <Carousel>
-                <Carousel.Item interval={1500}>
-                  <img
-                    className='img-carrosel'
-                    src={mercado}
-                    alt="Images One"
-                  />
-                </Carousel.Item>
-                <Carousel.Item interval={1500}>
-                  <img
-                    className='img-carrosel'
-                    src={musicas}
-                    alt="Image1 Two"
-                  />
-                </Carousel.Item>
-                <Carousel.Item interval={1500}>
-                  <img
-                    className='img-carrosel'
-                    src={times}
-                    alt="Image1 Two"
-                  />
-                </Carousel.Item>
-                <Carousel.Item interval={1500}>
-                  <img
-                    className='img-carrosel'
-                    src={classificacao}
-                    alt="Image1 Two"
-                  />
-                </Carousel.Item>
-                <Carousel.Item interval={1500}>
-                  <img
-                    className='img-carrosel'
-                    src={partidas}
-                    alt="Image1 Two"
-                  />
-                </Carousel.Item>
-                <Carousel.Item interval={1500}>
-                  <img
-                    className='img-carrosel'
-                    src={login}
-                    alt="Image1 Two"
-                  />
-                </Carousel.Item>
+                {carou}
               </Carousel>
             </ul>
           </nav>
@@ -93,20 +59,13 @@ export default class InitialPage extends Component {
             <div className='carousel'>
               <h4>Desenvolvedor fullStack!</h4>
               <div className='images'>
-                <a href="https://stackoverflow.com/users/21267050/reinaldo-pereira-dos-santos"
-                ><img src={stackOverflow} alt="StackOverFlow" className='img-src' /></a>
-                <a href="https://www.linkedin.com/in/reinaldo-pereira/"
-                ><img src={linkedin} alt='linkedin' className='img-src' /></a>
-                <a href="https://github.com/reinaldoper"
-                ><img src={github} alt='git' className='img-src' /></a>
-                <a href="mailto:reinaldoper83@gmail.com?subject=Hello%20again">
-                  <img src={gmail} alt='gmail' className='img-src' /></ a>
+                {link}
               </div>
             </div>
             <img src={eu} alt="Images" className='img' />
           </div>
           <ol className='tecnologias'>
-              {tec}
+            {tec}
           </ol>
           <button type='button'
             className='button' onClick={this.scrollToTop}><img src={topo} alt='topo' /></button>
