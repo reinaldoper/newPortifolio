@@ -216,6 +216,11 @@ div.content {
   width: 380px;
   height: 160px;
 }
+.img:hover {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
 
 .images {
   display: flex;
